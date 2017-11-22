@@ -1,5 +1,8 @@
 # Hadoop Cheat Sheet (Spark 1.6.0)
 
+## WinSCP
+Transfer files to Flux (and then to HDFS)
+
 ## Putty
 Host: flux-hadoop-login.arc-ts.umich.edu
 
@@ -10,8 +13,9 @@ copy file to hdfs system|`hdfs dfs -put filename`
 set python path|`export PYSPARK_PYTHON=/usr/bin/python`
 submit job|`spark-submit --master yarn-client --queue default filename`
 Loading pyspark interactive console|`pyspark --master yarn-client --queue default`
+List previous commands|`history`
 
-## Useful commands
+## Useful hadoop specific commands
 action|command
 ---|---
 list directory|`hdfs dfs -ls`
