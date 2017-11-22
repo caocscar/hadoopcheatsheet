@@ -16,17 +16,21 @@ Loading pyspark interactive console|`pyspark --master yarn-client --queue defaul
 List previous commands|`history`
 
 ## Useful hadoop specific commands
+
+See Tip #2 below
+
 action|command
 ---|---
 list directory|`hdfs dfs -ls`
-copy file to hdfs|`hdfs dfs -put filename`
-grab file from hdfs|`hdfs dfs -get filename`
+copy file to hdfs|`hdfs dfs [-put][-copyFromLocal] filename destination`
+overwite an existing file on hdfs|`hdfs fs [-put][-copyFromLocal] -f filename`
+grab file from hdfs|`hdfs dfs [-get][-copyToLocal] filename destination`
 delete file|`hdfs dfs -rm filename`
 delete directory|`hdfs dfs -rm -r directory`
-overwite an existing file|`hadoop fs -put -f filename`
 
 ## Tips:
-Need to be in the main directory (flux-hadoop-login) when running spark-submit commands
+1. Need to be in the main directory (flux-hadoop-login) when running spark-submit commands
+2. `hdfs dfs` prefix is preferable to `hadoops fs` (legacy)
 
 ## Problems
 
