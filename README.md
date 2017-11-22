@@ -34,6 +34,6 @@ Need to be in the main directory (flux-hadoop-login) when running spark-submit c
 Exception: Python in worker has different version 2.7 than that in driver 3.5, PySpark cannot run with different minor versions
 
 ### Solution
-export SPARK_YARN_USER_ENV=PYTHONHASHSEED=0
-export PYSPARK_PYTHON=/sw/lsa/centos7/python-anaconda3/created-20170424/bin/python
+export SPARK_YARN_USER_ENV=PYTHONHASHSEED=0  
+export PYSPARK_PYTHON=/sw/lsa/centos7/python-anaconda3/created-20170424/bin/python  
 spark-submit --master yarn-client --queue default filename
