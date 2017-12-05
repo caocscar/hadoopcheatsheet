@@ -7,26 +7,26 @@ Transfer files to Flux (and then to HDFS)
 Host: flux-hadoop-login.arc-ts.umich.edu
 
 ## Terminal
-activity|command
+Action|Command
 ---|---
-copy file to hdfs system|`hdfs dfs -put filename`
 set python path|`export PYSPARK_PYTHON=/usr/bin/python`
 submit job|`spark-submit --master yarn-client --queue default filename`
-Loading pyspark interactive console|`pyspark --master yarn-client --queue default`
+Loading PySpark interactive shell|`pyspark --master yarn-client --queue default`
 List previous commands|`history`
 
 ## Useful hadoop specific commands
 
 See Tip #2 below
 
-action|command
+Action|Command
 ---|---
 list directory|`hdfs dfs -ls`
 copy file to hdfs|`hdfs dfs [-put][-copyFromLocal] filename destination`
-overwite an existing file on hdfs|`hdfs fs [-put][-copyFromLocal] -f filename`
+overwite an existing file on hdfs|`hdfs dfs [-put][-copyFromLocal] -f filename`
 grab file from hdfs|`hdfs dfs [-get][-copyToLocal] filename destination`
 delete file|`hdfs dfs -rm filename`
 delete directory|`hdfs dfs -rm -r directory`
+get folder size|`hdfs dfs -du -s folder`
 
 ## Tips:
 1. Need to be in the main directory (flux-hadoop-login) when running spark-submit commands
