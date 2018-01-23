@@ -1,4 +1,4 @@
-# Hadoop Cheat Sheet (Spark 2.1.0)
+# Hadoop Cheat Sheet (Spark 2.2.0)
 
 ## WinSCP
 Transfer files to Flux (and then to HDFS)
@@ -10,9 +10,10 @@ Host: flux-hadoop-login.arc-ts.umich.edu
 Action|Command
 ---|---
 set python path|`export PYSPARK_PYTHON=/usr/bin/python`
-submit job|`spark-submit --master yarn-client --queue default filename`
-Loading PySpark interactive shell|`pyspark --master yarn-client --queue default`
+submit job|`spark-submit --master yarn --queue default filename`
+Loading PySpark interactive shell|`pyspark --master yarn --queue default`
 List previous commands|`history`
+
 
 ## Useful hadoop specific commands
 
@@ -31,6 +32,7 @@ get folder size|`hdfs dfs -du -s folder`
 ## Tips:
 1. Need to be in the main directory (flux-hadoop-login) when running spark-submit commands
 2. `hdfs dfs` prefix is preferable to `hadoops fs` (legacy)
+3. To exit PySpark interactive shell, type `exit()` or Ctrl-D
 
 ## Problems
 
