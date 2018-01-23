@@ -1,4 +1,4 @@
-# Hadoop Cheat Sheet (Spark 1.6.0)
+# Hadoop Cheat Sheet (Spark 2.1.0)
 
 ## WinSCP
 Transfer files to Flux (and then to HDFS)
