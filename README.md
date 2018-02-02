@@ -4,7 +4,8 @@
 Transfer files to Flux (and then to HDFS)
 
 ## Putty
-Host: flux-hadoop-login.arc-ts.umich.edu
+Host: `flux-hadoop-login.arc-ts.umich.edu`  
+Duo two-factor login is required. 
 
 ## Terminal
 Action|Command
