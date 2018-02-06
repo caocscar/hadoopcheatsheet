@@ -29,7 +29,7 @@ grab file from hdfs|`hdfs dfs [-get][-copyToLocal] filename destination`
 delete file|`hdfs dfs -rm filename`
 delete directory|`hdfs dfs -rm -r directory`
 get folder size|`hdfs dfs -du -s folder`
-delete file and skip trash|`hdfs dfs -rm -skiptrash filename`
+delete file and skip trash|`hdfs dfs -rm -skipTrash filename`
 empty trash bin (superuser privilege is required)|`hdfs dfs -expunge`
 
 ## Tips:
