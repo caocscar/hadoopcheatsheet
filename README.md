@@ -19,6 +19,9 @@ how much space is left in `/home` quota|`du -sh /home/caoa`
 
 ## Useful hadoop specific commands
 
+Apache Hadoop Documentation  
+http://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-common/FileSystemShell.html
+
 See Tip #2 below
 
 Action|Command
