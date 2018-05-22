@@ -13,6 +13,7 @@ Action|Command
 set python path|`export PYSPARK_PYTHON=/usr/bin/python`
 submit job|`spark-submit --master yarn --queue default filename`
 Loading PySpark interactive shell|`pyspark --master yarn --queue default`
+Loading PySpark w/ options|`pyspark --master yarn --queue workshop --num-executors 20 --executor-memory 5g --executor-cores 4`
 List previous commands|`history`
 how much space is left in `/home` quota|`du -sh /home/caoa`
 
