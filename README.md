@@ -30,7 +30,8 @@ Action|Command
 list directory|`hdfs dfs -ls`
 copy file to hdfs|`hdfs dfs [-put][-copyFromLocal] filename destination`
 overwite an existing file on hdfs|`hdfs dfs [-put][-copyFromLocal] -f filename`
-grab file from hdfs|`hdfs dfs [-get][-copyToLocal] filename destination`
+get file from hdfs|`hdfs dfs [-get][-copyToLocal] filename destination`
+rename file on hdfs|`hdfs dfs -mv oldname newname`
 delete file|`hdfs dfs -rm filename`
 delete directory|`hdfs dfs -rm -r directory`
 get folder size|`hdfs dfs -du -s folder`
