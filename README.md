@@ -51,6 +51,6 @@ empty trash bin (superuser privilege is required)|`hdfs dfs -expunge`
 ### Solution
 ```
 export SPARK_YARN_USER_ENV=PYTHONHASHSEED=0  
-export export PYSPARK_PYTHON=/sw/dsi/centos7/x86-64/Anaconda3-5.0.1/bin/python
+export PYSPARK_PYTHON=/sw/dsi/centos7/x86-64/Anaconda3-5.0.1/bin/python
 ```
 Then restart Spark job or interactive shell.
