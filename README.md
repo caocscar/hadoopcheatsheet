@@ -39,7 +39,7 @@ delete file and skip trash|`hdfs dfs -rm -skipTrash filename`
 empty trash bin (superuser privilege is required)|`hdfs dfs -expunge`
 
 ## Tips:
-1. Need to be in the main directory (flux-hadoop-login) when running spark-submit commands
+1. Need to be in the main directory (Cavium-Thunderx|flux-hadoop-login) when running spark-submit commands
 2. `hdfs dfs` prefix is preferable to `hadoops fs` (legacy)
 3. To exit PySpark interactive shell, type `exit()` or Ctrl-D
 
