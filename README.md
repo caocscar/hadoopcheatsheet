@@ -43,6 +43,9 @@ empty trash bin (superuser privilege is required)|`hdfs dfs -expunge`
 2. `hdfs dfs` prefix is preferable to `hadoops fs` (legacy)
 3. To exit PySpark interactive shell, type `exit()` or Ctrl-D
 
+## Accessing a Jupyter Notebook on a remote machine (linux) from another computer browser (windows)
+This url details a way to do this https://hsaghir.github.io/data_science/jupyter-notebook-on-a-remote-machine-linux/
+
 ## Problems
 
 ### Error
