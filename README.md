@@ -4,7 +4,7 @@
 Transfer files to Flux (and then to HDFS)
 
 ## Putty
-Host: `flux-hadoop-login.arc-ts.umich.edu`  
+Host: `cavium-thunderx.arc-ts.umich.edu`  
 Duo two-factor login is required. 
 
 ## Terminal
@@ -13,7 +13,7 @@ Action|Command
 set python path|`export PYSPARK_PYTHON=/usr/bin/python`
 submit job|`spark-submit --master yarn --queue default filename`
 Loading PySpark interactive shell|`pyspark --master yarn --queue default`
-Loading PySpark w/ options|`pyspark --master yarn --queue workshop --num-executors 20 --executor-memory 5g --executor-cores 4`
+Loading PySpark w/ options|`pyspark --master yarn --queue default --num-executors 20 --executor-memory 5g --executor-cores 4`
 List previous commands|`history`
 how much space is left in `/home` quota|`du -sh /home/caoa`
 
@@ -39,7 +39,7 @@ delete file and skip trash|`hdfs dfs -rm -skipTrash filename`
 empty trash bin (superuser privilege is required)|`hdfs dfs -expunge`
 
 ## Tips:
-1. Need to be in the main directory (Cavium-Thunderx|flux-hadoop-login) when running spark-submit commands
+1. Need to be in the main directory when running spark-submit commands
 2. `hdfs dfs` prefix is preferable to `hadoops fs` (legacy)
 3. To exit PySpark interactive shell, type `exit()` or Ctrl-D
 
