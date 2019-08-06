@@ -46,6 +46,11 @@ empty trash bin (superuser privilege is required)|`hdfs dfs -expunge`
 ## Accessing a Jupyter Notebook on a remote machine (linux) from another computer browser (windows)
 This url details a way to do this https://hsaghir.github.io/data_science/jupyter-notebook-on-a-remote-machine-linux/
 
+OR
+
+Follow these directions
+https://github.com/caocscar/twitter-decahose-pyspark#using-jupyter-notebook-with-pyspark
+
 ## Problems
 
 ### Error
