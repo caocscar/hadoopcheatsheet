@@ -13,9 +13,9 @@ Action|Command
 set python path|`export PYSPARK_PYTHON=/usr/bin/python`
 submit job|`spark-submit --master yarn --queue default filename`
 Loading PySpark interactive shell|`pyspark --master yarn --queue default`
-Loading PySpark w/ options|`pyspark --master yarn --queue default --num-executors 20 --executor-memory 5g --executor-cores 4`
+Loading PySpark w/ options|`pyspark --master yarn --queue default --num-executors 20 --executor-memory 5g --executor-cores 5`
 List previous commands|`history`
-how much space is left in `/home` quota|`du -sh /home/caoa`
+how much space is used in `/home` quota|`du -sh /home/caoa`
 
 
 ## Useful hadoop specific commands
@@ -38,6 +38,7 @@ get folder size|`hdfs dfs -du -s folder`
 delete file and skip trash|`hdfs dfs -rm -skipTrash filename`
 delete directory and skip trash|`hdfs dfs -rm -r -skipTrash directory`
 empty trash bin (superuser privilege is required)|`hdfs dfs -expunge`
+parallelizing get put commands with gnu parallel|`hdfs dfs -ls decahose.202009{01,02}* \| parallel -j 10 --progress hdfs dfs -get {} directory`
 
 ## Tips:
 1. Need to be in the main directory when running spark-submit commands
